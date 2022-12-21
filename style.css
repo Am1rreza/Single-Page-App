@@ -1,9 +1,27 @@
+/* Resets & Variables */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  --primaryColor: #6d28d9;
+  --secondaryColor: #ede9fe;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGrey: #7c7c7c;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+  --mainRed: #db2777;
+  --bodyColor: #f6f6f6;
 }
 
 body {
   font-family: "iranyekan";
+  color: var(--mainBlack);
+  background-color: var(--bodyColor);
+  position: relative;
+  direction: rtl;
 }
