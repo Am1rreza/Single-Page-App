@@ -1,9 +1,13 @@
+import Dashboard from "/pages/Dashboard.js";
+import Posts from "/pages/Posts.js";
+import Products from "/pages/Products.js";
+
 // what view show to user based on route ?
 function router() {
   const routes = [
-    { path: "/", view: () => console.log("dasboard page") },
-    { path: "/posts", view: () => console.log("posts page") },
-    { path: "/products", view: () => console.log("products page") },
+    { path: "/", view: () => Dashboard },
+    { path: "/posts", view: () => Posts },
+    { path: "/products", view: () => Products },
   ];
 
   const potentialRoutes = routes.map((route) => {
@@ -22,7 +26,7 @@ function router() {
     };
   }
 
-  match.route.view();
+  document.querySelector("#app").innerHTML = match.route.view();
 }
 
 // push user to new url
