@@ -1,13 +1,13 @@
-import Dashboard from "/pages/Dashboard.js";
-import Posts from "/pages/Posts.js";
-import Products from "/pages/Products.js";
+import Dashboard from "./pages/Dashboard.js";
+import Posts from "./pages/Posts.js";
+import Products from "./pages/Products.js";
 
 // what view show to user based on route ?
 function router() {
   const routes = [
-    { path: "/", view: () => Dashboard },
-    { path: "/posts", view: () => Posts },
-    { path: "/products", view: () => Products },
+    { path: "/", view: () => Dashboard() },
+    { path: "/posts", view: () => Posts() },
+    { path: "/products", view: () => Products() },
   ];
 
   const potentialRoutes = routes.map((route) => {
