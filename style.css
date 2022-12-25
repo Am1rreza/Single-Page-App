@@ -115,6 +115,7 @@ body {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: hidden;
+  pointer-events: none;
 }
 
 .icon-container:not(.app-version .icon-container) {
